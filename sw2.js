@@ -1,20 +1,18 @@
-var coe = function(num){
+	var coe = function(num){
 
-	for (var count = 0 ; count<=num; count++){
-		var div3 = count%3===0;
-		var div5 = count%5===0;
-		if (count=div3 && count=div5){
-			console.log("ComputerEngineering");
+		for (var count = 0 ; count<=num; count++){
+			if ((count%5) ==0 && (count%3)==0){
+				console.log("ComputerEngineering");
+			}
+			else if ((count%3)==0){
+				console.log("Computer");
+			}
+			else if ((count%5)==0){
+				console.log("Engineering");
+			}
+			else {
+				console.log(count);
+			}
 		}
-		else if (count=div3){
-			console.log("Computer");
-		}
-		else if (count=div5){
-			console.log("Engineering");
-		}
-		else {
-			return count;
-		}
-	}
-}
+	}	
 coe(100);
