@@ -1,4 +1,4 @@
-function isLeapyyear(year){
+function isLeapyear(year){
 	if ((year%4)==0){
 
 		console.log(year + " is a leap year.");
@@ -8,4 +8,6 @@ function isLeapyyear(year){
 		console.log(year +" is not a leap year");
 	}
 }
-isLeapyyear(2014);
+isLeapyear(2014);
+isLeapyear(2013);
+isLeapyear(2012);
